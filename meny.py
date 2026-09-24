@@ -6,6 +6,5 @@ def huvudmeny():
 
     print("0. Avsluta")
 
-    return(input("Välj ett av alternativen: "))
-
-val = huvudmeny()
+    val = input("Välj ett av alternativen: ")
+    return val
