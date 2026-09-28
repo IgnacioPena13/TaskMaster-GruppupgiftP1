@@ -1,6 +1,21 @@
 import webbrowser
 # import radera_todo
 # from lagga_till import lagga_till
+from visa_alla import visa_alla
+
+# Fejkdata för testning, kommer att ersättas med filhantering.
+uppgifter = [
+    {"id": 1, "uppgift": "Vattna blommorna", "prioritet": "Medium"},
+    {"id": 2, "uppgift": "Handla mat", "prioritet": "Hög"},
+    {"id": 3, "uppgift": "Laga lunch", "prioritet": "Hög"},
+    {"id": 4, "uppgift": "Diska", "prioritet": "Låg"},
+    {"id": 5, "uppgift": "Städa vardagsrummet", "prioritet": "Medium"},
+    {"id": 6, "uppgift": "Tvätta kläder", "prioritet": "Låg"},
+    {"id": 7, "uppgift": "Betala räkningar", "prioritet": "Hög"},
+    {"id": 8, "uppgift": "Träna", "prioritet": "Medium"},
+    {"id": 9, "uppgift": "Läsa 20 sidor", "prioritet": "Låg"},
+    {"id": 10, "uppgift": "Boka tandläkartid", "prioritet": "Medium"},
+]
 
 # Meny 1
 def visa_meny():
@@ -39,7 +54,8 @@ while True:
         uppgifter = lagga_till(uppgifter)
     elif val == "2":
         print("Du har valt: Visa alla uppgifter.")
-        uppgifts_meny()
+        # uppgifts_meny()
+        visa_alla(uppgifter)
         # Här ska Student 1 visa_alla_uppgifter() köras
     elif val == "3":
         print("Taskmaster Avslutas.")
