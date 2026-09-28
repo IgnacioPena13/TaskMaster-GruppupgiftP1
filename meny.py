@@ -54,7 +54,6 @@ while True:
         uppgifter = lagga_till(uppgifter)
     elif val == "2":
         print("Du har valt: Visa alla uppgifter.")
-        # uppgifts_meny()
         visa_alla(uppgifter)
         # Här ska Student 1 visa_alla_uppgifter() köras
     elif val == "3":
@@ -66,3 +65,25 @@ while True:
         break
     else:
         print("Ogiltigt val")
+
+
+
+
+
+
+
+
+    # while True:
+
+    # huvudmeny_val = huvudmeny(huvudmeny_lista)
+
+    # if huvudmeny_val == 1:
+    #     listan_val = visa_alla(uppgifter)
+    #     if listan_val == 0:
+    #             continue
+    #     else:
+    #         uppgift(listan_val)
+    # elif huvudmeny_val == 2:
+    #     lagga_till()
+    # elif huvudmeny_val == 3:
+    #     avsluta()
