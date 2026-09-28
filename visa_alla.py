@@ -7,5 +7,5 @@ def visa_alla(listan):
         print(f'{task["id"]} - {task["uppgift"]} ({task["prioritet"]})')
     val = int(input('Välj en uppgift nummer eller tryck 0 för att gå tillbaka: '))
     print(f'Du har valt: {val}')
-    uppgifts_meny()
+    uppgifts_meny(visa_alla, listan)
     # return(val)
