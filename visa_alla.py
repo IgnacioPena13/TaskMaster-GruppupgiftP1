@@ -1,4 +1,4 @@
-2def visa_alla(listan):
+def visa_alla(listan):
     print()
     print('***UPPGIFTER:***')
     for task in listan:
