@@ -1,4 +1,4 @@
-
+import webbrowser
 
 # Läser in alla sparade uppgifter från textfilen
 def läsa_från_fil():
@@ -64,7 +64,7 @@ def spara_till_fil(uppgifter):
     # Stänger filen när allt har sparats
     fil.close()
 
-import webbrowser
+
 
 
 
