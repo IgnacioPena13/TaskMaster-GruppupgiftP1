@@ -13,7 +13,7 @@ def visa_meny():
 def uppgifts_meny():
 
     while True:
-        print("--- Uppgiftsmeny---")
+        print("--- Uppgiftsmeny ---")
         print("1. Uppdatera uppgift")
         print("2. Radera Uppgift")
         print("3. Gå tillbaka")
