@@ -1,6 +1,6 @@
 #leta efter en specifik todo för att ta bort denn och printa både DONE och listan kvar
 import json
-
+#Behöver lite ändringar än
 def radera():
     with open("dummy.txt","r", encoding="utf-8") as f:
         data = json.load(f) #ska vara en lista med dictionaries
@@ -14,6 +14,11 @@ def radera():
                 data.pop(id_radera-1)
         for j in data: #printas igen data utan den uppgift man ville ta bort
             print(f'{j}', end='\n')
-        print('VILL DU SPARA DE HÄR UPPGIFTER? J/N')
-        spara = input('> ')
-        #koden/funktionen till filhantering
+        print('VILL DU SPARA DE HÄR UPPGIFTER? (J/N)')
+        spara = input('> ').lower()
+        if spara == "j":
+            print('Data sparas...')
+            #filhanteringg kommer här
+        elif spara =='n':
+            print("Data ska inte sparas")
+            #filhantering
