@@ -69,31 +69,6 @@ while True:
         print("Ogiltigt val")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Sparar alla uppgifter från listan till textfilen
 def spara_till_fil(uppgifter):
     
