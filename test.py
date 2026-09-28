@@ -1,4 +1,4 @@
-import webbrowser
+
 
 # Läser in alla sparade uppgifter från textfilen
 def läsa_från_fil():
@@ -39,6 +39,34 @@ def läsa_från_fil():
     except FileNotFoundError:
         return uppgifter
 
+# Sparar alla uppgifter från listan till textfilen
+def spara_till_fil(uppgifter):
+    
+    # Namnet på filen som uppgifterna ska sparas i
+    filnamn = "uppgifter.txt"
+    
+    # Öppnar filen i skrivläge ("w")
+    fil = open(filnamn, "w")
+    
+    # Går igenom varje uppgift i listan
+    for uppgift in uppgifter:
+        
+        # Skriver id, uppgift och prioritet separerade med |
+        fil.write(str(uppgift["id"]))
+        fil.write("|")
+        fil.write(uppgift["uppgift"])
+        fil.write("|")
+        fil.write(uppgift["prioritet"])
+        
+        # Gör en ny rad inför nästa uppgift
+        fil.write("\n")
+    
+    # Stänger filen när allt har sparats
+    fil.close()
+
+import webbrowser
+
+
 
 def visa_meny():
     print("--- To do List Program ---")
@@ -67,29 +95,3 @@ while True:
         break
     else:
         print("Ogiltigt val")
-
-
-# Sparar alla uppgifter från listan till textfilen
-def spara_till_fil(uppgifter):
-    
-    # Namnet på filen som uppgifterna ska sparas i
-    filnamn = "uppgifter.txt"
-    
-    # Öppnar filen i skrivläge ("w")
-    fil = open(filnamn, "w")
-    
-    # Går igenom varje uppgift i listan
-    for uppgift in uppgifter:
-        
-        # Skriver id, uppgift och prioritet separerade med |
-        fil.write(str(uppgift["id"]))
-        fil.write("|")
-        fil.write(uppgift["uppgift"])
-        fil.write("|")
-        fil.write(uppgift["prioritet"])
-        
-        # Gör en ny rad inför nästa uppgift
-        fil.write("\n")
-    
-    # Stänger filen när allt har sparats
-    fil.close()
