@@ -1,6 +1,6 @@
 import webbrowser
 import radera_todo
-
+from lagga_till import lagga_till
 
 def visa_meny():
     print("--- To do List Program ---")
@@ -13,13 +13,13 @@ while True:
     val = input("Välj ett alternativ 1-4: ")
     if val == "1":
         print("Du har valt: Lägga till uppgift.")
-        # Här ska Student 1 lägg_till_uppgift() köras
+        uppgifter = lagga_till(uppgifter)
     elif val == "2":
         print("Du har valt: Visa alla uppgifter.")
         # Här ska Student 1 visa_alla_uppgifter() köras
     elif val == "3":
         print("Du har valt: Ta bort uppgift.")
-        # Här ska Student 1 ta_bort_uppgift() köras
+        radera_todo.radera()
     elif val == "4":
         print("Taskmaster Avslutas.")
         break
