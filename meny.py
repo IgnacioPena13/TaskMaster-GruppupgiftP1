@@ -46,6 +46,7 @@ while True:
         break
     elif val == "secret":
         print("Du hittade den hemliga alternativet")
+        webbrowser.open("https://www.youtube.com/watch?v=oHg5SJYRHA0")
         break
     else:
         print("Ogiltigt val")
