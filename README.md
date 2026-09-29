@@ -22,8 +22,7 @@ När programmet startas visas följande meny:
 
 1. Lägg till uppgift
 2. Visa alla uppgifter
-3. Ta bort uppgift
-4. Avsluta
+3. Avsluta
 
 Programmet fortsätter köras tills användaren väljer att avsluta.
 
