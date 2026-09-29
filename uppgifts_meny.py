@@ -1,4 +1,4 @@
-from radera_todo import radera_todo
+from radera_todo import radera
 
 def uppgifts_meny(visa_alla, uppgifter):
     uppgiftsmeny = ['Uppdatera', 'Ta bort', 'Gå tillbaka']
