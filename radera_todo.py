@@ -1,6 +1,6 @@
 #leta efter en specifik todo för att ta bort denn och printa både DONE och listan kvar
 import Filhantering as fh
-#Behöver lite ändringar än
+
 def radera(data, uppgiftId):
     try:
         print('VILL DU RADERA DE HÄR UPPGIFTER? (j/n)')
