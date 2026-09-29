@@ -1,5 +1,4 @@
 import webbrowser
-from radera_todo import radera
 from lagga_till import lagga_till
 from visa_alla import visa_alla
 
@@ -83,6 +82,7 @@ while True:
     if val == "1":
         print("Du har valt: Lägga till uppgift.")
         uppgifter = lagga_till(uppgifter)
+        spara_till_fil(uppgifter)
     elif val == "2":
         print("Du har valt: Visa alla uppgifter.")
         visa_alla(uppgifter)
