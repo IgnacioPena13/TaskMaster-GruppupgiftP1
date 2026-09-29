@@ -1,4 +1,5 @@
 from radera_todo import radera
+from uppdatera import uppdatera
 
 def uppgifts_meny(visa_alla, uppgifter, id_uppgift):
     uppgiftsmeny = ['Uppdatera', 'Ta bort', 'Gå tillbaka']
@@ -10,7 +11,7 @@ def uppgifts_meny(visa_alla, uppgifter, id_uppgift):
 
     if val_uppgift == "1":
         print("Du har valt: Uppdatera uppgift.")
-        # uppdatera(val) # ==>> pass the id number chosen at visa_alla
+        uppdatera(uppgifter, id_uppgift)
 
     elif val_uppgift == "2":
         print("Du har valt: Radera Uppgift.")
