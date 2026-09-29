@@ -9,14 +9,16 @@ def radera(data, uppgiftId):
             for i in data: #checkar om det finns en upppgiftmed id man har skrivit
                 if i["id"] == uppgiftId:
                     data.pop(uppgiftId-1)
+                    print(f"Uppgiften nr {uppgiftId} - {i['uppgift']} raderas...")
                     for index, uppgift in enumerate(data):
                         uppgift["id"] = index + 1
+            print('***UPPGIFTER:***')
             for j in data: #printas igen data utan den uppgift man ville ta bort
-                print(f'{j}')
-            print("Uppgiften raderas...")
+                print(f'{j["id"]} - {j["uppgift"]} ({j["prioritet"]})')
             fh.spara_till_fil(data)
         elif radera_id =='n':
-            print("Uppgiften ska inte raderas")
+            print(f"Uppgiften nr {uppgiftId} ska inte raderas")
+        print()
         return(data)
     except:
         print("Något gick fel")
