@@ -1,4 +1,7 @@
-1|six|5
-2|tralala|45
+1|ggggg|Hög
+2|apple|Medium
 3|banana|6
 4|kiwi|4
+5|mango|Låg
+6|jackfruit|Hög
+7|peach|Medium
