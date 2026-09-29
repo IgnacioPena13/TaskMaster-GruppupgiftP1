@@ -87,11 +87,18 @@ def uppgifts_meny():
         val_uppgift = input("Välj ett alternativ 1-3: ")
         if val_uppgift == "1":
             print("Du har valt: Uppdatera uppgift.")
-
         elif val_uppgift == "2":
-            print("Du har valt: Radera Uppgift.")
-            radera_todo.radera()
-
+            while True:
+                try:
+                    print("Du har valt: Radera Uppgift.")
+                    läsa_från_fil()
+                    uppgiftId = int(input("Id på uppgift du vill ta bort?"))
+                    if uppgiftId <= 0:
+                        raise ValueError
+                    radera_todo.radera(int(uppgiftId))
+                    break
+                except ValueError:
+                    print("Ogiltig Id")
         elif val_uppgift == "3":
             print("Du har valt: Gå tillbaka.")
             break
