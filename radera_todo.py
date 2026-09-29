@@ -3,7 +3,7 @@ import Filhantering as fh
 #Behöver lite ändringar än
 def radera(data, uppgiftId):
     try:
-        print('VILL DU SPARA DE HÄR UPPGIFTER? (j/n)')
+        print('VILL DU RADERA DE HÄR UPPGIFTER? (j/n)')
         radera_id = input('> ').lower()
         if radera_id == "j":
             print('Data sparas...')
