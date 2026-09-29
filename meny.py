@@ -75,27 +75,7 @@ def visa_meny():
     print("2. Visa alla uppgifter")
     print("3. Avsluta")
 
-# Meny 2
-# def uppgifts_meny():
-
-#     while True:
-#         print("--- Uppgiftsmeny ---")
-#         print("1. Uppdatera uppgift")
-#         print("2. Radera Uppgift")
-#         print("3. Gå tillbaka")
-#         val_uppgift = input("Välj ett alternativ 1-3: ")
-#         if val_uppgift == "1":
-#             print("Du har valt: Uppdatera uppgift.")
-
-#         elif val_uppgift == "2":
-#             print("Du har valt: Radera Uppgift.")
-
-
-#         elif val_uppgift == "3":
-#             print("Du har valt: Gå tillbaka.")
-#             break
-#         else:
-#             print("Ogiltigt val")
+uppgifter = läsa_från_fil()
 
 while True:
     visa_meny()
@@ -116,21 +96,3 @@ while True:
         break
     else:
         print("Ogiltigt val")
-
-
-
-
-    # while True:
-
-    # huvudmeny_val = huvudmeny(huvudmeny_lista)
-
-    # if huvudmeny_val == 2:
-    #     listan_val = visa_alla(uppgifter)
-    #     if listan_val == 0:
-    #             continue
-    #     else:
-    #         uppgift(listan_val)
-    # elif huvudmeny_val == 1:
-    #     lagga_till()
-    # elif huvudmeny_val == 3:
-    #     avsluta()
