@@ -13,5 +13,5 @@ def visa_alla(listan):
         print()
     else:
         # FELHANTERING - if val is valid id
-        uppgifts_meny(visa_alla, listan)
+        uppgifts_meny(visa_alla, listan, val)
     # return(val)
