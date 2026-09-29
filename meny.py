@@ -86,7 +86,6 @@ while True:
     elif val == "2":
         print("Du har valt: Visa alla uppgifter.")
         visa_alla(uppgifter)
-        # Här ska Student 1 visa_alla_uppgifter() köras
     elif val == "3":
         print("Taskmaster Avslutas.")
         break
