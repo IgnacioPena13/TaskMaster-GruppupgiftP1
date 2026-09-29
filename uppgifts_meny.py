@@ -14,7 +14,7 @@ def uppgifts_meny(visa_alla, uppgifter):
 
     elif val_uppgift == "2":
         print("Du har valt: Radera Uppgift.")
-        radera_todo()
+        radera()
 
     elif val_uppgift == "3":
         print("Du har valt: Gå tillbaka.")
