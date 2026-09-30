@@ -20,7 +20,7 @@ def visa_alla(listan):
             elif val < 1 or val > len(listan):
                 print(f"Ogiltigt nummer. Ange ett nummer mellan 1 - {len(listan)}, eller 0 för att gå tillbaka.")
             else:
-                uppgifts_meny(visa_alla, listan, val)
+                uppgifts_meny(listan, val)
 
         except ValueError:
             print(f"Ogiltigt val. Ange ett nummer mellan 1 - {len(listan)}, eller 0 för att gå tillbaka.")
