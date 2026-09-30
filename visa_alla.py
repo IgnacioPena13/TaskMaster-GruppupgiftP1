@@ -10,10 +10,12 @@ def visa_alla(listan):
     print()
 
     # Användaren väljer en uppgift genom att ange dess ID eller skriver 0 för att gå tillbaka till huvudmenyn
-    val = int(input('Välj en uppgift nummer eller tryck 0 för att gå tillbaka: '))
-    print(f'Du har valt: {val}')
-
-    if val == 0:
-        print()
-    else:
-        uppgifts_meny(visa_alla, listan, val)
+    try:
+        val = int(input('Välj en uppgift nummer eller tryck 0 för att gå tillbaka: '))
+        print(f'Du har valt: {val}')
+        if val == 0:
+            print()
+        else:
+            uppgifts_meny(visa_alla, listan, val)
+    except ValueError:
+        print(f"Ogiltigt val. Ange ett nummer mellan 1 - {len(listan)}, eller 0 för att gå tillbaka.")
