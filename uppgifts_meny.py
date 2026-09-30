@@ -1,12 +1,16 @@
 from radera_todo import radera
 from uppdatera import uppdatera
 
+# Visar menyn för den valda uppgiften
 def uppgifts_meny(visa_alla, uppgifter, id_uppgift):
     uppgiftsmeny = ['Uppdatera', 'Ta bort', 'Gå tillbaka']
     print("--- Uppgiftsmeny ---")
+
+    # Skriver ut alla menyval med nummer
     for i, e in enumerate(uppgiftsmeny):
         print(f'{i+1} - {e}')
 
+    # Användaren väljer ett alternativ
     val_uppgift = input("Välj ett alternativ 1-3: ")
 
     if val_uppgift == "1":
