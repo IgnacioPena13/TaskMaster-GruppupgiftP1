@@ -1,7 +1,7 @@
-1|ggggg|HÃ¶g
+1|ggggg|Hög
 2|apple|Medium
-3|banana|6
-4|kiwi|4
-5|mango|LÃ¥g
-6|jackfruit|HÃ¶g
+3|banana|Medium
+4|kiwi|Hög
+5|apple|Medium
+6|jackfruit|Låg
 7|peach|Medium

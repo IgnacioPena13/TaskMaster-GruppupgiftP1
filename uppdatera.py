@@ -5,7 +5,7 @@ def uppdatera(data, uppgiftId):
         try:
             for i in data: #checkar om det finns en upppgiftmed id man har skrivit
                 if i["id"] == uppgiftId:
-                    ny_namn = input("Uppgift: ")
+                    ny_namn = input("Skriv in den nya uppgiften: ")
                     ny_prio_nr = int(input("Prio (Hög(1), Medium(2) eller Låg(3)): "))
                     ny_prio = ""
                     if  ny_prio_nr== 1:
