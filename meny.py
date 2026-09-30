@@ -27,7 +27,7 @@ while True:
     elif val == "3":
         print("Taskmaster Avslutas.")
         break
-    elif val == "secret":
+    elif val.upper() == "SECRET":
         print("Du hittade den hemliga alternativet")
         webbrowser.open("https://www.youtube.com/watch?v=oHg5SJYRHA0")
         break
