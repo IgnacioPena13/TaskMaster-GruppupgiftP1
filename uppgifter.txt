@@ -1,0 +1,12 @@
+1|Äta en elefant i små bitar|Hög
+2|Övertyga katten om att jag bestämmer|Medium
+3|Hitta Atlantis|Låg
+4|Lära mig prata med duvor|Medium
+5|Stjäla tillbaka min hoodie från min vän|Hög
+6|Bygga en koja i vardagsrummet|Medium
+7|Överleva måndagen|Hög
+8|Beställa 37 pizzor av misstag|Låg
+9|Hitta personen som tog sista kakan|Hög
+10|Starta ett hemligt imperium|Medium
+11|Lära en kråka att säga mitt namn|Låg
+12|Hitta en miljon kronor|Hög
