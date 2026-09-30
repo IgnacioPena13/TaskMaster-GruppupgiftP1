@@ -5,3 +5,4 @@
 5|mango|Låg
 6|jackfruit|Hög
 7|peach|Medium
+8|bajs|Medium
