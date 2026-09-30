@@ -1,4 +1,4 @@
-1|ggggg|Hög
+1|Task1|Låg
 2|apple|Medium
 3|banana|Medium
 4|kiwi|Hög
