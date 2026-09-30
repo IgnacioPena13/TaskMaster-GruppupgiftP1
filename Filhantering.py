@@ -10,7 +10,7 @@ def läsa_från_fil():
         filnamn = "uppgifter.txt"
         
         # Öppnar filen i läsläge ("r")
-        fil = open(filnamn, "r")
+        fil = open(filnamn, "r", encoding="utf-8")
        
         # Läser in alla rader från filen
         rader = fil.readlines()
@@ -45,7 +45,7 @@ def spara_till_fil(uppgifter):
     filnamn = "uppgifter.txt"
     
     # Öppnar filen i skrivläge ("w")
-    fil = open(filnamn, "w")
+    fil = open(filnamn, "w", encoding="utf-8")
     
     # Går igenom varje uppgift i listan
     for uppgift in uppgifter:
