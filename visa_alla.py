@@ -3,6 +3,10 @@ from uppgifts_meny import uppgifts_meny
 def visa_alla(listan):
     while True:
         print()
+        if not listan:
+            print("Det finns inga uppgifter i listan.")
+            return
+        
         print('***UPPGIFTER:***')
         
         # Visar alla uppgifter i listan med ID, namn och prioritet
