@@ -5,6 +5,7 @@ from uppdatera import uppdatera
 def uppgifts_meny(uppgifter, id_uppgift):
     while True:
         uppgiftsmeny = ['Uppdatera', 'Ta bort', 'Gå tillbaka']
+        print()
         print("--- Uppgiftsmeny ---")
 
         # Skriver ut alla menyval med nummer
@@ -19,14 +20,19 @@ def uppgifts_meny(uppgifter, id_uppgift):
                 raise ValueError
 
             if val_uppgift == 1:
+                print()
                 print("Du har valt: Uppdatera uppgift.")
                 uppdatera(uppgifter, id_uppgift)
+                return "back"
 
             elif val_uppgift == 2:
+                print()
                 print("Du har valt: Radera Uppgift.")
                 uppgifter = radera(uppgifter, id_uppgift)
+                return "back"
 
             elif val_uppgift == 3:
+                print()
                 print("Du har valt: Gå tillbaka.")
                 return "back"
 

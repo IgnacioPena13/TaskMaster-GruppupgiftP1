@@ -26,10 +26,6 @@ def uppdatera(data, uppgiftId):
                     # Bekräftar att uppgiften har uppdaterats
                     print(f"Uppgiften nr {uppgiftId} - {i['uppgift']} uppdateras...")
             
-            # Printas igen data utan den uppgift man ville ta bort
-            print('***UPPGIFTER:***')
-            for j in data: 
-                print(f'{j["id"]} - {j["uppgift"]} ({j["prioritet"]})')
             # Sparar den uppdaterade listan till filen
             fh.spara_till_fil(data)
             print()

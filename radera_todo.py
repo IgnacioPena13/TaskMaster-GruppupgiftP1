@@ -16,10 +16,6 @@ def radera(data, uppgiftId):
                         # Uppdaterar ID för uppgifterna efter den raderade uppgiften
                         for index, uppgift in enumerate(data):
                             uppgift["id"] = index + 1
-                # Printas igen data utan den uppgift man ville ta bort
-                print('***UPPGIFTER:***')
-                for j in data: 
-                    print(f'{j["id"]} - {j["uppgift"]} ({j["prioritet"]})')
                 # Sparar den uppdaterade listan till filen
                 fh.spara_till_fil(data)
 

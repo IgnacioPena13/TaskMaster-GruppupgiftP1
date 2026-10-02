@@ -7,6 +7,7 @@ from Filhantering import spara_till_fil
 
 # Huvudmeny
 def visa_meny():
+    print()
     print("--- To do List Program ---")
     print("1. Lägg till uppgift")
     print("2. Visa alla uppgifter")
